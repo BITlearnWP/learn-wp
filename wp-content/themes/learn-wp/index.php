@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>Headeris</header>
-    <main>Kontentas</main>
-    <footer>Footeris</footer>
-</body>
-</html>
+<?php get_header() ?>
+<div class="container">
+    <div class="row">
+        <?php while (have_posts()) :
+            the_post(); ?>
+            <div class="col col-4">
+                <h3><?php the_title() ?></h3>
+                <a href="<?php echo get_permalink() ?>">Skaityti toliau</a>
+            </div>
+        <?php endwhile ?>
+    </div>
+</div>
+<?php get_footer() ?>
