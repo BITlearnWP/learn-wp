@@ -3,9 +3,10 @@
     <div class="row">
         <?php while (have_posts()) :
             the_post(); ?>
-            <div class="col col-4">
+            <div class="col col-6">
                 <h3><?php the_title() ?></h3>
-                <a href="<?php echo get_permalink() ?>">Skaityti toliau</a>
+                <div><?php echo get_the_date( 'Y-m-d' ) ?></div>
+                <a href="<?php the_permalink() ?>">Skaityti toliau</a>
             </div>
         <?php endwhile ?>
     </div>

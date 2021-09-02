@@ -1,6 +1,7 @@
 </main>
     <div class="container">
-        <footer>Statinis footeris</footer>
+        <footer>Footeris</footer>
     </div>
+    <?php wp_footer(); ?>
 </body>
 </html>
