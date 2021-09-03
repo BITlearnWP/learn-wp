@@ -27,7 +27,7 @@
     height: 100%;
     object-fit: cover;
     transform: none;
-    object-position: center center;
+    object-position: top left;
 }
 
 .arrow-block {
