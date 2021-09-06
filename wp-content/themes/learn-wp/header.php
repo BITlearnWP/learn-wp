@@ -9,13 +9,25 @@
     <?php wp_head() ?>
 </head>
 
-<body>
-    <div class="container">
-        <header>
-            <div class="alert alert-success"><?php bloginfo('name') ?></div>
-            <div class="alert alert-success"><?php bloginfo('description') ?></div>
-            Meniu
+<body>    
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col col-4">
+                    <a href="<?php echo site_url('front-page') ?>">
+                        <div class="h2"><?php bloginfo('name') ?></div>
+                    </a>
+                    <div> <?php bloginfo('description') ?></div>
+                </div>
+                <div class="col col-8">
+                <?php wp_nav_menu( [
+		                'theme_location' => 'header_menu',
+                        'container'      => false,
+                        'menu_class'    => 'menu wp-learn-menu-header'
+	                ] ); ?>
+                </div>
+            </div>
             <hr>
-        </header>
-    </div>
+        </div>
+    </header>
     <main>

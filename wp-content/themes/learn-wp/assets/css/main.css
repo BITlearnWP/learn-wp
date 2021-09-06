@@ -1,3 +1,24 @@
+.wp-learn-menu-header {
+    display: flex;
+    list-style-type: none;
+    margin-top: 25px;
+    justify-content: flex-end;
+}
+
+.wp-learn-menu-header li {
+    margin: 0 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+.wp-learn-menu-header li.current-menu-item a {
+    color: red;
+}
+
+
 .full-slider, .full-slider-dis {
     width: 60%;
     margin: 0 auto;
