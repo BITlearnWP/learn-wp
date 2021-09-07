@@ -9,6 +9,7 @@
                             <?php dynamic_sidebar('sidebar-footer-1') ?>
                         </div>
                     <?php endif; ?>
+                    <a href="mailto:rambek@gmail.com">Rasyti</a>
                     <?php if(is_active_sidebar('sidebar-footer-2')) : ?>
                         <div class="col col-4">
                             <?php dynamic_sidebar('sidebar-footer-2') ?>

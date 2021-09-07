@@ -57,7 +57,8 @@ add_action('init', function() {
         ],
         'public' => true,
         'menu_icon' => 'dashicons-book',
-        'has_archive' => true
+        'has_archive' => true,
+        
     ] );
     register_taxonomy('autorius', ['book'], [
         'labels' => [
@@ -65,7 +66,7 @@ add_action('init', function() {
         ],
         'public' => true,
     ]); 
-    register_taxonomy('publisher', ['book'], [
+    register_taxonomy('publisher', ['book', 'post'], [
         'labels' => [
             'name' => 'Leidykla'
         ],

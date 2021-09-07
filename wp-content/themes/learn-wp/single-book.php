@@ -18,7 +18,7 @@
             </div>
             <div>
                 Puslapių skaičius:
-                <?php echo get_field('puslapiu_skaicius') ?>
+                <?php the_field('puslapiu_skaicius') ?>
             </div>
             <div>
                 Kaina:
